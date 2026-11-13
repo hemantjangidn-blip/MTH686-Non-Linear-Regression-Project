@@ -1,0 +1,48 @@
+n=100; t range=[0.01, 1.00]
+Model 1 profile grid start: b1=-1.000, b2=1.000, RSS=0.042268057
+Model 2 linearized start: [ 1.20951409  0.61644408 -0.17685886]
+
+=== Model 1 ===
+RSS=0.041897726; sigma2_hat=RSS/(n-k)=0.0004410287; sigma_hat=0.0210007
+Full Gaussian AIC=-481.98168; full Gaussian BIC=-466.35066
+Reduced AIC=-767.76939; reduced BIC=-754.74354 (same ranking)
+a0: estimate=-0.61234947; SE=1.08656756; 95% t-Wald CI=(-2.76945881, 1.54475987)
+a1: estimate=-0.03466533; SE=0.03786043; 95% t-Wald CI=(-0.10982779, 0.04049713)
+b1: estimate=-9.04693036; SE=16.69275034; 95% t-Wald CI=(-42.18622972, 24.09236900)
+a2: estimate=1.83763932; SE=1.04435516; 95% t-Wald CI=(-0.23566781, 3.91094646)
+b2: estimate=0.43105507; SE=0.18613330; 95% t-Wald CI=(0.06153375, 0.80057639)
+Jacobian condition number=16930.440
+Shapiro-Wilk: W=0.97225, p=0.03296
+Lilliefors: D=0.08385, p=0.08300
+Durbin-Watson=2.20720; Ljung-Box lag-5 p=0.38623
+
+=== Model 2 (beta0=1) ===
+RSS=0.042675237; sigma2_hat=RSS/(n-k)=0.000439950893; sigma_hat=0.0209750
+Full Gaussian AIC=-484.14296; full Gaussian BIC=-473.72228
+Reduced AIC=-769.93067; reduced BIC=-762.11515 (same ranking)
+a0: estimate=1.20456569; SE=0.00607296; 95% t-Wald CI=(1.19251254, 1.21661885)
+a1: estimate=0.67784922; SE=0.05333345; 95% t-Wald CI=(0.57199708, 0.78370136)
+b1: estimate=-0.14899864; SE=0.02373869; 95% t-Wald CI=(-0.19611337, -0.10188390)
+Jacobian condition number=48.604
+Shapiro-Wilk: W=0.98077, p=0.15268
+Lilliefors: D=0.07144, p=0.23978
+Durbin-Watson=2.16807; Ljung-Box lag-5 p=0.61460
+
+=== Model 3 ===
+RSS=0.041615513; sigma2_hat=RSS/(n-k)=0.000438058029; sigma_hat=0.0209298
+Full Gaussian AIC=-482.65754; full Gaussian BIC=-467.02652
+Reduced AIC=-768.44525; reduced BIC=-755.41940 (same ranking)
+b0: estimate=1.19006227; SE=0.01112551; 95% t-Wald CI=(1.16797534, 1.21214920)
+b1: estimate=1.08323142; SE=0.15101668; 95% t-Wald CI=(0.78342540, 1.38303743)
+b2: estimate=-0.72486592; SE=0.60376388; 95% t-Wald CI=(-1.92348877, 0.47375694)
+b3: estimate=1.17455238; SE=0.89605741; 95% t-Wald CI=(-0.60434650, 2.95345126)
+b4: estimate=-0.51269698; SE=0.44018673; 95% t-Wald CI=(-1.38657812, 0.36118416)
+Jacobian condition number=703.717
+Shapiro-Wilk: W=0.97107, p=0.02669
+Lilliefors: D=0.07720, p=0.16155
+Durbin-Watson=2.22127; Ljung-Box lag-5 p=0.36740
+
+=== MODEL COMPARISON ===
+Model 2 (beta0=1): delta_AIC=0.00000; delta_BIC=0.00000
+Model 3: delta_AIC=1.48542; delta_BIC=6.69576
+Model 1: delta_AIC=2.16128; delta_BIC=7.37162
